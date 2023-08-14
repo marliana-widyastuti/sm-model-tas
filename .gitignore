@@ -1,0 +1,10 @@
+data
+DF_var_ssm_AUS2.csv
+DF_var_ssm_TAS.csv
+__pycache__
+.vscode
+scalerAU.save
+scalerTAS.save
+lstm_OneAU
+lstmTAS
+lstmTL
