@@ -8,3 +8,6 @@ scalerTAS.save
 lstm_OneAU
 lstmTAS
 lstmTL
+mlp_OneAu
+mlpTAS
+mlpTL

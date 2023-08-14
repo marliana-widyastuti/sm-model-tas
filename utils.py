@@ -452,7 +452,7 @@ class model():
         va_in, va_out = va_in.astype('float32'), va_out.astype('float32')
         
         reset()
-        pretrained = load_model(self.pwd+'mlp_OneAu/mlp_OneAu/', custom_objects={'ccc':ccc})
+        pretrained = load_model(self.pwd+'/mlp_OneAu/mlp_OneAu/', custom_objects={'ccc':ccc})
 
         for l in pretrained.layers[:3]:
             l.trainable = False
