@@ -14,12 +14,16 @@ args, unknown = parser.parse_known_args()
 
 start_time = time.time()
 
-# Au = utils.OneAU(DFAU=args.fileAU)
-# Au.run_OneAU()
+M = utils.model(DFAU=args.fileAU, DFTAS=args.fileTAS)
+print(M.stations)
 
-tas = utils.lstmTAS(DFTAS=args.fileTAS)
-# tas.run_lstmTAS()
-tas.run_lstmTL()
+M.run_OneAU()
+M.run_lstmTAS()
+M.run_lstmTL()
+
+M.run_mlpOneAU()
+M.run_mlpTAS()
+M.run_mlpTL()
 
 end_time = time.time()
 utils.calculate_execution_time(start_time, end_time)
